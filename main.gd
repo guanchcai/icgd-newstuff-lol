@@ -95,7 +95,6 @@ func _ready() -> void:
 	spawn_timer.timeout.connect(_on_spawn_timer_timeout)
 	spawn_timer.start()
 
-
 func _process(delta: float) -> void:
 	# Keep shaking even after the round ends, so the final hit still lands.
 	update_shake(delta)
